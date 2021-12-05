@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>Text shadow generator</header>
+    <main>
+        <div class="wrapper">
+            <div class="manuals">
+                <h2>CSS text-shadow properties</h2>
+                <div class="property">
+                    <div class="top">
+                        <span>Horizontal</span>
+                        <input type="number" name="horizontal" value="0">
+                    </div>
+                    <div class="bottom">
+                        <input type="range" value="0" min="-100" max="100">
+                    </div>
+                </div>
+                <div class="property">
+                    <div class="top">
+                        <span>Vertical</span>
+                        <input type="number" name="vertical" value="0">
+                    </div>
+                    <div class="bottom">
+                        <input type="range" min="-100" max="100" value="0">
+                    </div>
+                </div>
+                <div class="property">
+                    <div class="top">
+                        <span>Blur</span>
+                        <input type="number" name="blur" value="25">
+                    </div>
+                    <div class="bottom">
+                        <input type="range" min="0" max="100" value="25">
+                    </div>
+                </div>
+                <div class="property">
+                    <div class="top">
+                        <span>Color</span>
+                        <input type="color" name="color" value="#000000">
+                    </div>
+                </div>
+            </div>
+            <div class="display">
+                <h1>Text shadow</h1>
+            </div>
+            <div class="output-wrapper">
+                <div class="css-output">
+                    <span>Take your CSS code</span>
+                    <button class="load-button">Generate CSS</button>
+                    <div class="lds-ring">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <textarea name="css-output"></textarea>
+                    <span class="tooltip">Copied!</span>
+                    <button class="copy-button">Copy</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
