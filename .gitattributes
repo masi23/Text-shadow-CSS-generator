@@ -1,2 +1,4 @@
 # Ignoruj pliki HTML w statystykach języków
 *.html linguist-vendored
+# Ignoruj pliki sass w statystykach języków
+*.sass linguist-vendored
